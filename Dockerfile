@@ -1,5 +1,7 @@
 FROM django:latest
 
+ENV servername "mail.example.com"
+
 ADD src /
 
 RUN apt-get update && \
@@ -11,6 +13,6 @@ RUN apt-get update && \
 
 WORKDIR /usr/src/app
 
-RUN ./run.py --force mail.serverking.ch
+RUN ./run.py --force $servername
 
 CMD ["/usr/bin/supervisord"]
