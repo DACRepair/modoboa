@@ -1,4 +1,8 @@
-# Modoboa Installer on docker
-Mail hosting made simple! http://www.modoboa.org
+# Modoboa Mail Server - http://modoboa.org/
 
-This repository is at work. Please don't use it yet or contribute.
+Modoboa is a simple, easy to use mail server using common mail server utilities and an interface / manager written in Python.
+
+This was forked from ServerKing's version of the Docker Modoboa image, but with some minor changes
+
+- Volume for MailData / Config (WIP)
+- ENV variable "servername" for specifying the mail server address.
